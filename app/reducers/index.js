@@ -1,11 +1,7 @@
+import axios from "axios";
+import { combineReducers } from "redux";
+import allCandiesReducer from "./allCandies";
 
-const initialState = {}
-
-const rootReducer = (state = initialState, action) => {
-  switch (action.type) {
-    default:
-      return state
-  }
-}
-
-export default rootReducer
+export default combineReducers({
+  allCandies: allCandiesReducer,
+});
